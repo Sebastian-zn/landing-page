@@ -17,11 +17,25 @@ body {
 }
 
 .section {
-  margin-bottom: 10px;
+  margin-bottom: 45px;
 }
 
 .title {
   color: var(--subtitle);
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0 45px;
+}
+
+.body {
+  width: 100%;
+  margin-top: 30px;
+}
+
+hr {
+  margin: 15px 0;
+  border: 1px solid rgb(214, 214, 214);
 }
 
 /* Header */
@@ -79,9 +93,9 @@ body {
 
 .header__texts {
   width: 75%;
-  height: auto;
   margin: 0 auto;
   text-align: center;
+  display: table-cell;
   vertical-align: middle;
 }
 
@@ -104,7 +118,53 @@ body {
   overflow: hidden;
 }
 
-/* Cards */
+/* Products Section */
+.our-products {
+  width: 100%;
+  height: auto;
+}
+
+.our-products__body {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.body__img {
+  grid-column: 1/5;
+}
+
+.body__img img {
+  width: 100%;
+}
+
+.body__texts {
+  grid-column: 5/10;
+  padding: 0 55px;
+}
+
+.body__texts h4 {
+  color: var(--subtitle);
+}
+
+.body__texts .product-point {
+  color: #fff;
+  padding: 2px 8px;
+  background-color: var(--subtitle);
+  border-radius: 50%;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.body__texts .products-description {
+  line-height: 1.6em;
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: rgb(206, 206, 206);
+}
+
+/* Cards Section */
 .comments {
   display: grid;
   grid-template-columns: repeat(4, auto);
