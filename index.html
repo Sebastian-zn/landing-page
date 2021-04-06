@@ -6,12 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
+
   <!-- Icons -->
-  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/all.min.js"></script>
   <title>Landing Page HTML & CSS</title>
 </head>
 
 <body>
+  <!-- Back to Top Button -->
+  <div class="btt" id="btt" onclick="backtoTop()">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
   <!-- Header -->
   <header class="header">
 
@@ -19,17 +25,17 @@
     <nav class="nav">
       <ul class="links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
 
     <!-- Header Content -->
     <section class="header__section">
       <div class="header__texts">
-        <h1>This is a title.</h1>
-        <h2>This is a subtitle.</h2>
+        <h1>Boost your sales by at least 200%</h1>
+        <h3>With a powerful website</h3>
       </div>
     </section>
 
@@ -42,7 +48,7 @@
   </header>
 
   <!-- Main Content -->
-  <main class="main">
+  <main class="main" id="about-us">
     <div class="container">
       <!-- Products -->
       <section class="section our-products">
@@ -178,7 +184,7 @@
   </main>
 
   <!-- Services -->
-  <main class="main main--gray">
+  <main class="main main--gray" id="services">
     <div class="container">
       <div class="section services">
         <div class="title services__title">
@@ -190,7 +196,7 @@
               <img src="img/img2.svg" alt="service one image">
             </div>
             <div class="service__description">
-              <h4>Name</h4>
+              <h4>Service 1</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iure illum eveniet necessitatibus,
                 dolorem distinctio quas quae! Quos, iste ipsum!</p>
             </div>
@@ -200,7 +206,7 @@
               <img src="img/img3.svg" alt="service two image">
             </div>
             <div class="service__description">
-              <h4>Name</h4>
+              <h4>Service 2</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iure illum eveniet necessitatibus,
                 dolorem distinctio quas quae! Quos, iste ipsum!</p>
             </div>
@@ -210,7 +216,7 @@
               <img src="img/img4.svg" alt="service three image">
             </div>
             <div class="service__description">
-              <h4>Name</h4>
+              <h4>Service 3</h4>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo iure illum eveniet necessitatibus,
                 dolorem distinctio quas quae! Quos, iste ipsum!</p>
             </div>
@@ -222,25 +228,31 @@
 
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer" id="contact">
     <div class="contacts">
-      <div class="contact">
-        Neil DeGrace
-        01020515
+      <div class="contact contact-1">
+        <p class="contact-name">Neil DeGrace</p>
+        <hr class="contact-underline">
+        <p class="contact-number">01020515</p>
       </div>
-      <div class="contact">
-        Neil DeGrace
-        01020515
+      <div class="contact contact-2">
+        <p class="contact-name">Neil DeGrace</p>
+        <hr class="contact-underline">
+        <p class="contact-number">01020515</p>
       </div>
-      <div class="contact">
-        Neil DeGrace
-        01020515
+      <div class="contact contact-3">
+        <p class="contact-name">Neil DeGrace</p>
+        <hr class="contact-underline">
+        <p class="contact-number">01020515</p>
       </div>
     </div>
     <div class="copyright">
-      <h6>kjhb</h6>
+      <p>Sebastian Avila &copy;</p>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
