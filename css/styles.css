@@ -34,6 +34,13 @@ body {
   margin-top: 30px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  max-width: 1500px;
+}
+
 hr {
   margin: 15px 0;
   border: 1px solid rgb(214, 214, 214);
@@ -112,14 +119,6 @@ hr {
   width: 100%;
   height: auto;
   margin-bottom: 45px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 80%;
-  height: auto;
-  max-width: 1500px;
-  overflow: hidden;
 }
 
 /* Products Section */
@@ -235,14 +234,18 @@ hr {
   grid-template-columns: repeat(4, auto);
   width: 100%;
   height: auto;
-  gap: 1em;
+  column-gap: 1em;
+}
+
+.comments__title {
+  grid-column: 1/5;
 }
 
 .card {
   display: flex;
   background-color: #fff;
   align-items: center;
-  padding: 15px;
+  margin-top: 30px;
   border-radius: 10px;
   position: relative;
   font-family: 'Montserrat', sans-serif;
@@ -258,14 +261,19 @@ hr {
 }
 
 .card__thumbnail {
-  width: 350px;
-  height: 150px;
-  border-radius: 10px;
+  width: 370px;
+  height: 170px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 6px 0px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden; 
 }
 
 .card__img {
   width: 100%;
+  height: 100%;
 }
 
 .card__title {
@@ -313,6 +321,42 @@ hr {
 }
 
 /* Services */
+.services__body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1em;
+}
+
+.service--one {
+  grid-column: 1/3;
+}
+
+.service--two {
+  grid-column: 3/5;
+}
+
+.service--three {
+  grid-column: 5/7;
+}
+
+.service__thumbnail {
+width: 100%;
+overflow: hidden;
+margin-bottom: 15px;
+}
+
+.service__thumbnail > img {
+  width: 100%;
+}
+
+.service__description > h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service__description > p {
+  text-align: justify;
+}
 
 /* Footer */
 .footer {
