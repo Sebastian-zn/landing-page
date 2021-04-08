@@ -18,18 +18,35 @@
     <i class="fas fa-chevron-up"></i>
   </div>
 
+  
   <!-- Header -->
   <header class="header">
-
+    
     <!-- Navigation -->
-    <nav class="nav">
-      <ul class="links">
+    <nav class="nav" id="nav">
+      <div class="logo">
+        <span>Quovoo</span>
+      </div>
+      <ul class="links" id="links">
         <li><a href="#">Home</a></li>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
+      <div class="menu-icon" id="btn-menu">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></a>
+      </div>
     </nav>
+    
+    <!-- Responsive Menu -->
+    <div class="menu" id="menu">
+      <ul class="menu__links" id="menu-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
 
     <!-- Header Content -->
     <section class="header__section">
@@ -38,10 +55,10 @@
         <h3>With a powerful website</h3>
       </div>
     </section>
-
+    
     <!-- Wave -->
-    <div class="" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-        style="height: 100%; width: 100%;">
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
         <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
           style="stroke: none; fill: #fff;"></path>
       </svg></div>
