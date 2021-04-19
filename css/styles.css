@@ -472,7 +472,23 @@ margin-bottom: 15px;
 }
 
 /* Media Querys */
+
+/* -- Smartphones */
 @media screen and (max-width: 576px) {
+  /* Sub-medias */
+  @media screen and (max-height: 570px) {
+    .header__section .header__texts {
+      font-size: 0.9em;
+      vertical-align: unset;
+    }
+  }
+  
+  @media screen and (min-height: 730px) {
+    .header__section {
+      margin-top: 2em;
+    }
+  }
+
   /* General Styles */
   .title {
     font-size: 1em;
@@ -618,4 +634,9 @@ margin-bottom: 15px;
   .service__thumbnail {
     width: unset;
   }
+}
+
+/* -- Tablets */
+@media screen and (min-height: 768px) {
+  
 }
