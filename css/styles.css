@@ -17,6 +17,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .main--gray {
   padding: 30px 0;
   background-color: rgb(228, 228, 228);
@@ -117,13 +121,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   transition: .5s;
 }
 
 .logo {
   font-family: 'Quicksand', sans-serif;
   color: #fff;
+  font-size: 2em;
 }
 
 .links {
@@ -456,6 +461,7 @@ margin-bottom: 15px;
 
 .contact-underline {
   border: solid 1px blueviolet;
+  margin: 8px 0;
 }
 
 .contact .contact-number {
@@ -510,7 +516,7 @@ margin-bottom: 15px;
   }
 
   .logo span {
-    font-size: 1.8em;
+    font-size: 1em;
   }
 
   .links {
@@ -527,6 +533,7 @@ margin-bottom: 15px;
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
+    display: block;
   }
 
   .header__texts h1 {
@@ -638,5 +645,77 @@ margin-bottom: 15px;
 
 /* -- Tablets */
 @media screen and (min-height: 768px) {
+   /* Header Section */
+   .nav .logo {
+     font-size: 2em;
+   }
   
+  /* Products Section */
+   .our-products__body {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .our-products__body .body__img {
+    grid-column: 1/5;
+    grid-row: 1/3;
+  }
+
+  .our-products__body .body__texts {
+    padding: 0 20px;
+    grid-column: 1/5;
+    grid-row: 3/6;
+  }
+  
+  /* Portfolio Section */
+  .portfolio .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-auto-flow: row;
+    gap: 1em;
+  }
+
+  .gallery-grid .img-port {
+    width: 100%;
+    margin-bottom: unset;
+  }
+  
+  /* Comments Section */
+  .comments__body {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .card1 {
+    grid-column: 1/5;
+  }
+
+  .card2 {
+    grid-column: 1/5;
+  }
+
+  /* Services Section */
+  .services__body {
+    margin-top: unset;
+  }
+
+  .services__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service--one {
+    grid-column: 1/2;
+  }
+
+  .service--two {
+    grid-column: 2/3;
+  }
+
+  .service--three {
+    grid-column: 3/4;
+  }
+
+  .service__thumbnail {
+    width: unset;
+    margin-bottom: unset;
+  }
 }
